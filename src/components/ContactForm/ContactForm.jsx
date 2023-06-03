@@ -30,7 +30,7 @@ export const ContactForm = ({ contacts, setContacts }) => {
       number,
     };
 
-    setContacts([...contacts, newContact]);
+    setContacts((prevContacts) => [...prevContacts, newContact]);
     setName('');
     setNumber('');
   };
